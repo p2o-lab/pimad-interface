@@ -1,0 +1,33 @@
+{
+  "name": "@p2olab/pimad-interface",
+  "description": "interface definitions for pimad-core",
+  "version": "0.0.1-alpha01",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:p2o-lab/pimad-interface.git",
+  "homepage": "https://github.com/p2o-lab/pimad-interface",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "postversion": "npm publish",
+    "lint": "eslint -c .eslintrc.js --ext .ts src"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsdoc": "^37.6.1",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "typescript": "^4.5.4"
+  },
+  "author": "P2O-Lab <p2o-lab@mailbox.tu-dresden.de>",
+  "contributors": [
+    "Christoph Jesaja Heidelbach",
+    "Julius Lorenz <julius.lorenz@tu-dresden.de>",
+    "Tuan Son Dinh <tuansondinh96@gmail.com"
+  ]
+}
