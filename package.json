@@ -4,7 +4,10 @@
   "version": "0.0.1-alpha01",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "git@github.com:p2o-lab/pimad-interface.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/p2o-lab/pimad-interface.git"
+  },
   "homepage": "https://github.com/p2o-lab/pimad-interface",
   "license": "MIT",
   "scripts": {
@@ -28,6 +31,9 @@
   "contributors": [
     "Christoph Jesaja Heidelbach",
     "Julius Lorenz <julius.lorenz@tu-dresden.de>",
-    "Tuan Son Dinh <tuansondinh96@gmail.com"
-  ]
+    "Tuan Son Dinh"
+  ],
+  "bugs": {
+    "url": "https://github.com/p2o-lab/pimad-interface/issues"
+  }
 }
