@@ -27,7 +27,6 @@ export interface DataItemModel {
   value: string;
   defaultValue: string;
   description: string;
-  access: DataItemAccessLevel;
   pimadIdentifier: string;
   cIData?: CIData;
   dataSourceIdentifier: string;
@@ -37,6 +36,7 @@ export interface DataItemModel {
 export interface NodeId {
   namespaceIndex: string;
   identifier: string;
+  access: DataItemAccessLevel;
 }
 
 export interface CIData {
@@ -51,6 +51,7 @@ export interface Endpoint {
   description: string;
   pimadIdentifier: string;
 }
+
 export interface Attribute {
   dataType: string;
   name: string;
