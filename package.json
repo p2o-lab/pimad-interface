@@ -1,7 +1,7 @@
 {
   "name": "@p2olab/pimad-interface",
   "description": "interface definitions for pimad-core",
-  "version": "0.0.1-alpha01",
+  "version": "0.0.1-alpha02",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -31,7 +31,7 @@
   "contributors": [
     "Christoph Jesaja Heidelbach",
     "Julius Lorenz <julius.lorenz@tu-dresden.de>",
-    "Tuan Son Dinh"
+    "Tuan Son Dinh <tuansondinh96@gmail.com>"
   ],
   "bugs": {
     "url": "https://github.com/p2o-lab/pimad-interface/issues"

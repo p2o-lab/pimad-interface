@@ -2,6 +2,7 @@
  * This is the interface to parse PEAModel coming from PiMAd
  * At specially needed, if we are using PiMAd as web service
  */
+import {DataItemAccessLevel} from './enum';
 
 export interface PEAModel {
   dataAssemblies: DataAssemblyModel[];
@@ -11,43 +12,38 @@ export interface PEAModel {
   endpoint: Endpoint[];
   pimadIdentifier: string;
   services: ServiceModel[];
-  initialized: boolean;
 }
 export interface DataAssemblyModel {
   dataItems: DataItemModel[];
   dataSourceIdentifier: string;
   description: string;
   name: string;
-  initialized: boolean;
   metaModelRef: string;
   pimadIdentifier: string;
 }
 export interface DataItemModel {
-  initialized: boolean;
   dataType: string;
   name: string;
   value: string;
   defaultValue: string;
   description: string;
+  access: DataItemAccessLevel;
   pimadIdentifier: string;
-  cIData: CIData;
+  cIData?: CIData;
   dataSourceIdentifier: string;
   metaModelRef: string;
 }
 
 export interface NodeId {
-  initialized: boolean;
   namespaceIndex: string;
   identifier: string;
 }
 
 export interface CIData {
-  initialized: boolean;
   nodeId: NodeId;
 }
 
 export interface Endpoint {
-  initialized: boolean;
   dataType: string;
   name: string;
   value: string;
@@ -58,12 +54,10 @@ export interface Endpoint {
 export interface Attribute {
   dataType: string;
   name: string;
-  initialized: boolean;
   value: string;
 }
 
 export interface ProcedureModel {
-  initialized: boolean;
   attributes: Attribute[];
   dataAssembly: DataAssemblyModel;
   metaModelRef: string;
@@ -77,7 +71,6 @@ export interface ProcedureModel {
 }
 
 export interface ServiceModel {
-  initialized: boolean;
   attributes: any[];
   dataAssembly: DataAssemblyModel;
   metaModelRef: string;
