@@ -1,7 +1,7 @@
 {
   "name": "@p2olab/pimad-interface",
   "description": "interface definitions for pimad-core",
-  "version": "0.0.1-alpha02",
+  "version": "0.0.1-alpha03",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
