@@ -9,7 +9,7 @@ export interface PEAModel {
   dataModel: string;
   feas: any[];
   name: string;
-  endpoint: Endpoint[];
+  endpoints: Endpoint[];
   pimadIdentifier: string;
   services: ServiceModel[];
 }
