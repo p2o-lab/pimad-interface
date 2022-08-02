@@ -1,7 +1,7 @@
 {
   "name": "@p2olab/pimad-interface",
   "description": "interface definitions for pimad-core",
-  "version": "0.0.1-alpha05",
+  "version": "0.0.1-alpha06",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -17,6 +17,7 @@
     "lint": "eslint -c .eslintrc.js --ext .ts src"
   },
   "devDependencies": {
+    "@p2olab/pimad-types": "1.0.1-alpha1.0.4",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/eslint-plugin-tslint": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",

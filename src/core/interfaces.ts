@@ -2,7 +2,7 @@
  * This is the interface to parse PEAModel coming from PiMAd
  * At specially needed, if we are using PiMAd as web service
  */
-import {DataItemAccessLevel} from './enum';
+import {Access} from '@p2olab/pimad-types';
 
 export interface PEAModel {
   dataAssemblies: DataAssemblyModel[];
@@ -36,7 +36,7 @@ export interface DataItemModel {
 export interface NodeId {
   namespaceIndex: string;
   identifier: string;
-  access: DataItemAccessLevel;
+  access: Access;
 }
 
 export interface CIData {
